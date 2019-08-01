@@ -33,6 +33,7 @@ BRANCH:es una linea de tiempo de Commits
   
 	Nombres de los Branchs: son labels -> deletion removes label only
 -------------------------------------------------------------------
+git branch <nombreBranch>
 
 git branch -->muestra las ramas 
 
@@ -40,7 +41,7 @@ git branch -d <nombreDeLaRamaAborrar> --> borra la rama indicada
 
 git checkout <master> -->cambia a la rama master
 
-git checkout -b <nuevarama> --> genera una nueva rama
+git checkout -b <nuevarama> --> genera y cambia a la nueva rama
 
 git merge <ramaAagregar> -->junta la rama actual con la que se le indica
 
