@@ -1,3 +1,1 @@
-# FizzMod-Front
-
-Respositorio con trabajos del laboratorio.
+# Repositorio para probar comandos Git
