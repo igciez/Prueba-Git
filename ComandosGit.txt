@@ -1,0 +1,119 @@
+                 ************Git: Comandos**************
+-------------------------
+INIT: crea carpeta ".git"
+-------------------------
+
+git init
+
+-----------------------------
+ADD: agrega al "Staging Area"
+-----------------------------
+
+git add -A stages all changes.
+
+git add . stages new files and modifications, without deletions.
+
+git add -u stages modifications and deletions, without new files.
+
+---------------
+LOG :
+---------------
+git log --> lista todos los commits realizados
+
+git log --status -->lista commits con detalle
+
+git log --oneline -->lista commits en una linea
+
+git log --graph --> genera graficos
+
+git log --oneline --graph --decorate --all -->agrega mas informacion que los anteriores
+
+-------------------------------------------------------------------
+BRANCH:es una linea de tiempo de Commits
+  
+	Nombres de los Branchs: son labels -> deletion removes label only
+-------------------------------------------------------------------
+
+git branch -->muestra las ramas 
+
+git branch -d <nombreDeLaRamaAborrar> --> borra la rama indicada
+
+git checkout <master> -->cambia a la rama master
+
+git checkout -b <nuevarama> --> genera una nueva rama
+
+git merge <ramaAagregar> -->junta la rama actual con la que se le indica
+
+---------
+DIF:
+----------
+
+git diff -->entre los archivos con commit el mismo sin commit ??
+
+git difftool -->muestra las diferencias mejor
+
+-------------
+HELP: Manuales
+--------------
+
+git help <comando> (ej: git help diff)
+
+--------------
+Satatus:
+--------------
+
+git status
+
+-------------------------------------------------------------------
+COMMIT: agrega al "repositorio .git" los archivos del "stagin area"
+        genera así las "Branch"
+-------------------------------------------------------------------
+
+git commit -m "Agrego nuevos archivos"
+
+git commit -->abre edicion vim para generar comentarios largos a los archivos
+
+git commit -a -m "Texto que identifique por que se hizo el commit" --> Agregar y Cargar en el HEAD los cambios realizados
+
+-------------
+PUSH:
+-------------
+
+git push -u origin master
+
+------------
+PULL:
+------------
+
+git pull origin master -->descargar repositorio de github
+
+---------
+CLONE: 
+----------
+
+git clone [direccion repositorio]
+
+-----------------------------------------------------------------------
+TAG: etiquetas que se asocian a una rama para dar informacion adicional
+-----------------------------------------------------------------------
+
+git tag --> Muestra una lista de todos los tags
+
+git tag -a <verison> - m "esta es la versión x" -->Crea un nuevo tag
+
+-----------------------------------------------------------------------
+SHOW: muestra informacion de un determinado tag
+-----------------------------------------------------------------------
+
+git show <version>
+
+-----------------------------------------------------------------------
+RESET: elimina archivo/s del commit ???????????
+-----------------------------------------------------------------------
+
+git reset <idCommit> --soft --> pone el HEAD en idCommit, elimina los que sean superior
+			        y los devuelve al stagin area.
+
+git reset <idCommit> --mixed -->como el anterior pero pone los archivos en el working directory
+
+git reset <idCommit> --hard --> borra del working directory
